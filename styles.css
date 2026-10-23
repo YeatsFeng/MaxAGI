@@ -231,10 +231,322 @@ section {
   cursor: pointer;
 }
 
+/* ---------- Nav CTA ---------- */
+.nav a.nav-cta {
+  background: #16A34A;
+  color: white;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+}
+
+.nav a.nav-cta:hover {
+  background: #15803d;
+  color: white;
+}
+
+/* ---------- Shared buttons ---------- */
+.btn-solid {
+  background: #16A34A;
+  color: white;
+}
+
+.btn-solid:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 1.5px solid #16A34A;
+  color: #16A34A;
+  background: white;
+}
+
+.btn-outline:hover {
+  background: #f0fdf4;
+}
+
+/* ---------- Client stage section ---------- */
+.stages {
+  background: white;
+}
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stage-card {
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-top: 4px solid #16A34A;
+  border-radius: 18px;
+  padding: 2rem;
+}
+
+.stage-tag {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #16A34A;
+  background: #dcfce7;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.stage-situation {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 1.5rem;
+}
+
+.stage-offer {
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e7eb;
+  margin-bottom: 1rem;
+}
+
+.stage-offer-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.stage-offer h3 {
+  font-size: 1.3rem;
+  color: #111827;
+}
+
+.deliverable-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+  align-content: flex-start;
+}
+
+.deliverable-list li {
+  font-size: 0.9rem;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.35rem 0.7rem;
+  color: #374151;
+}
+
+.stage-link {
+  color: #16A34A;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.stage-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Assessment section ---------- */
+.assessment {
+  background: #f0fdf4;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #16A34A;
+  margin-bottom: 0.75rem;
+}
+
+.section-header p {
+  max-width: 680px;
+  margin: 0 auto;
+  color: #4b5563;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.offer-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2.25rem;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.offer-card-featured {
+  border: 2px solid #16A34A;
+}
+
+.offer-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.offer-lead {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  position: absolute;
+  top: -0.8rem;
+  right: 1.5rem;
+  background: #16A34A;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+
+.check-list {
+  list-style: none;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16A34A;
+  font-weight: 800;
+}
+
+.offer-card .btn {
+  text-align: center;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.process-step {
+  text-align: center;
+}
+
+.step-num,
+.option-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: #16A34A;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+}
+
+.process-step h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.process-step p {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* ---------- Contact options ---------- */
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.contact-option {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.contact-option .option-num {
+  margin-bottom: 0;
+}
+
+.contact-option h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-option p {
+  color: #4b5563;
+}
+
+.contact-email a {
+  color: #16A34A;
+  font-weight: 600;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: -0.5rem;
+}
+
+.contact-form select {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: inherit;
+}
+
+/* ---------- Footer ---------- */
 .footer {
   background: #0f172a;
   color: #cbd5e1;
-  padding: 1.5rem 0;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.footer-slogan {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1e293b;
 }
 
 .footer-content {
@@ -251,7 +563,7 @@ section {
 
   .nav {
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
     right: 0;
     background: white;
@@ -267,8 +579,18 @@ section {
 
   .hero-content,
   .about-content,
-  .contact-container {
+  .contact-container,
+  .offer-grid,
+  .stage-grid {
     grid-template-columns: 1fr;
+  }
+
+  .process {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav a.nav-cta {
+    text-align: center;
   }
 
   .hero-text h1 {

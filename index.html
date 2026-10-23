@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Max AGI | AWS, MSP & AI Services</title>
+  <meta name="description" content="Launch secure AWS and AI solutions in weeks, not months. Max AGI helps Australian businesses move from cloud complexity to a production-ready platform." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +20,12 @@
       <nav class="nav" id="navMenu">
         <a href="#hero">Home</a>
         <a href="#services">Services</a>
+        <a href="#assessment">Assessment</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-cta">Book a Call</a>
       </nav>
 
-      <button class="menu-toggle" id="menuToggle">
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
         ☰
       </button>
     </div>
@@ -32,15 +34,16 @@
   <section class="hero" id="hero">
     <div class="container hero-content">
       <div class="hero-text">
-        <h1>Accelerate Your Cloud & AI Growth</h1>
+        <h1>Launch secure AWS and AI solutions in weeks, not months.</h1>
         <p>
-          Max AGI helps businesses modernize with AWS cloud solutions,
-          managed services, and practical AI adoption strategies.
+          We help Australian businesses move from cloud complexity to a
+          production-ready platform — across infrastructure, managed application
+          deployment, and practical AI.
         </p>
 
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Book a Consultation</a>
-          <a href="#services" class="btn btn-secondary">Explore Services</a>
+          <a href="#contact" class="btn btn-primary" data-interest="readiness">Book a Cloud &amp; AI Readiness Call</a>
+          <a href="#contact" class="btn btn-secondary" data-interest="aws-assessment">Get an AWS Deployment Assessment</a>
         </div>
       </div>
 
@@ -49,8 +52,8 @@
           <h3>What We Deliver</h3>
           <ul>
             <li>AI-driven Managed Cloud Operations (MSP)</li>
-            <li>AI Enablement & Automation</li>
-            <li>Cloud Migration & Optimization</li>
+            <li>AI Enablement &amp; Automation</li>
+            <li>Cloud Migration &amp; Optimization</li>
           </ul>
         </div>
       </div>
@@ -76,7 +79,7 @@
         </div>
 
         <div class="service-card">
-          <h3>AI Readiness & Transformation Advisory</h3>
+          <h3>AI Readiness &amp; Transformation Advisory</h3>
           <p>
             Strategic consulting to help organizations assess, plan, and implement
             AI capabilities aligned with business outcomes.
@@ -97,6 +100,148 @@
             Smooth migration from on-premises or other cloud environments into
             scalable AWS infrastructure.
           </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client stage section: maps each typical client situation to a Max AGI offering -->
+  <section class="stages" id="stages">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Find your fit</span>
+        <h2>Which of these sounds like you?</h2>
+        <p>
+          Most organisations we work with are at one of three stages.
+          Each has a clear starting point.
+        </p>
+      </div>
+
+      <div class="stage-grid">
+        <div class="stage-card">
+          <span class="stage-tag">Stage 1</span>
+          <p class="stage-situation">
+            You're planning to move to the cloud, or your current infrastructure
+            has grown complex and hard to manage.
+          </p>
+          <div class="stage-offer">
+            <span class="stage-offer-label">We recommend</span>
+            <h3>AWS Foundation &amp; Migration</h3>
+          </div>
+          <ul class="deliverable-list">
+            <li>Landing Zone</li>
+            <li>IAM</li>
+            <li>Security baseline</li>
+            <li>Monitoring</li>
+            <li>Backup</li>
+            <li>Cost baseline</li>
+            <li>Migration roadmap</li>
+          </ul>
+          <a href="#contact" class="stage-link" data-interest="aws-assessment">Get an AWS Deployment Assessment →</a>
+        </div>
+
+        <div class="stage-card">
+          <span class="stage-tag">Stage 2</span>
+          <p class="stage-situation">
+            Your IT Ops team is small or stretched, and keeping applications
+            running takes more effort than it should.
+          </p>
+          <div class="stage-offer">
+            <span class="stage-offer-label">We recommend</span>
+            <h3>Managed Application Platform</h3>
+          </div>
+          <ul class="deliverable-list">
+            <li>Platform as a Service (PaaS)</li>
+            <li>Infrastructure as a Service (IaaS)</li>
+            <li>Configuration as a Service (CaaS)</li>
+            <li>DevOps as a Service (DaaS)</li>
+          </ul>
+          <a href="#contact" class="stage-link" data-interest="aws-assessment">Get an AWS Deployment Assessment →</a>
+        </div>
+
+        <div class="stage-card">
+          <span class="stage-tag">Stage 3</span>
+          <p class="stage-situation">
+            Your IT Ops and infrastructure are mature, and you want to use AI
+            to help your people work more efficiently.
+          </p>
+          <div class="stage-offer">
+            <span class="stage-offer-label">We recommend</span>
+            <h3>Enterprise AI Knowledge Assistant</h3>
+          </div>
+          <ul class="deliverable-list">
+            <li>Local RAG (private knowledge search)</li>
+            <li>Process automation</li>
+          </ul>
+          <a href="#contact" class="stage-link" data-interest="readiness">Book a Cloud &amp; AI Readiness Call →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assessment sales section — draft, to be aligned with the assessment slides in the PPT -->
+  <section class="assessment" id="assessment">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Start here</span>
+        <h2>Not sure where to start? Begin with an assessment.</h2>
+        <p>
+          Before you commit budget, we look at where you are today and map the
+          fastest, safest path to a production-ready AWS and AI platform.
+        </p>
+      </div>
+
+      <div class="offer-grid">
+        <div class="offer-card offer-card-featured">
+          <span class="badge">Most requested</span>
+          <h3>AWS Deployment Assessment</h3>
+          <p class="offer-lead">
+            A structured review for businesses ready to build on, migrate to, or fix their AWS environment.
+          </p>
+          <ul class="check-list">
+            <li>Current-state review of infrastructure and applications</li>
+            <li>Security, reliability and cost baseline</li>
+            <li>Target architecture and deployment approach</li>
+            <li>Prioritised roadmap with effort and timeline</li>
+          </ul>
+          <a href="#contact" class="btn btn-solid" data-interest="aws-assessment">Get an AWS Deployment Assessment</a>
+        </div>
+
+        <div class="offer-card">
+          <h3>Cloud &amp; AI Readiness Call</h3>
+          <p class="offer-lead">
+            A focused conversation for teams exploring cloud or AI and wanting a clear next step.
+          </p>
+          <ul class="check-list">
+            <li>Review your business goals and current systems</li>
+            <li>Identify quick-win AI and automation opportunities</li>
+            <li>Discuss security, compliance and data considerations</li>
+            <li>Leave with a recommended next step</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-interest="readiness">Book an AI Readiness Call</a>
+        </div>
+      </div>
+
+      <div class="process">
+        <div class="process-step">
+          <span class="step-num">1</span>
+          <h4>Book</h4>
+          <p>Choose the call or the assessment that fits your stage.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">2</span>
+          <h4>Discover</h4>
+          <p>We review your goals, environment and constraints.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">3</span>
+          <h4>Recommend</h4>
+          <p>You receive clear findings and a practical plan.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">4</span>
+          <h4>Launch</h4>
+          <p>We help you move to production in weeks, not months.</p>
         </div>
       </div>
     </div>
@@ -127,26 +272,53 @@
   <section class="contact" id="contact">
     <div class="container contact-container">
       <div>
-        <h2>Contact Us</h2>
-        <p>
-          Ready to modernize your infrastructure or launch your AI journey?
-          Let's discuss your business goals. YeatsFeng@maxagi.com.au
+        <h2>Let's Get You Started</h2>
+        <div class="contact-options">
+          <div class="contact-option">
+            <span class="option-num">1</span>
+            <div>
+              <h3>Book a Cloud &amp; AI Readiness Call</h3>
+              <p>Explore where cloud and AI can make the biggest difference for your business.</p>
+            </div>
+          </div>
+          <div class="contact-option">
+            <span class="option-num">2</span>
+            <div>
+              <h3>Get an AWS Deployment Assessment</h3>
+              <p>Get a clear review of your AWS environment and a roadmap to production.</p>
+            </div>
+          </div>
+        </div>
+        <p class="contact-email">
+          Or email us directly: <a href="mailto:YeatsFeng@maxagi.com.au">YeatsFeng@maxagi.com.au</a>
         </p>
       </div>
 
       <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Tell us about your project"></textarea>
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <label for="interest" class="form-label">I'm interested in</label>
+        <select id="interest" name="interest" required>
+          <option value="readiness">Cloud &amp; AI Readiness Call</option>
+          <option value="aws-assessment">AWS Deployment Assessment</option>
+        </select>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="company" placeholder="Company" />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea rows="5" name="message" placeholder="Tell us about your project"></textarea>
+        <button type="submit" class="btn btn-solid" id="submitBtn">Book a Cloud &amp; AI Readiness Call</button>
       </form>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Max AGI Pty LTD. All rights reserved.</p>
-      <p>maxagi.com.au</p>
+    <div class="container">
+      <p class="footer-slogan">
+        Built for Australian SMEs, growing SaaS teams, and professional-service firms
+        that need Cloud and AI expertise without hiring a full internal cloud team.
+      </p>
+      <div class="footer-content">
+        <p>© 2026 Max AGI Pty LTD. All rights reserved.</p>
+        <p>maxagi.com.au</p>
+      </div>
     </div>
   </footer>
 
